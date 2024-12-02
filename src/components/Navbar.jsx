@@ -40,8 +40,8 @@ const Navbar = () => {
 
             {/* Menu Links - Popup Style */}
             <div
-                className={`md:hidden absolute top-0 right-0 w-[120px] bg-gray-100 shadow-lg transition-transform ${isMenuOpen ? "translate-x-0" : "translate-x-full"}`}
-                style={{ transition: "transform 0.3s ease-in-out" }}
+                className={`md:hidden absolute top-0 right-0 w-full bg-gray-100 shadow-lg transition-all duration-300 ${isMenuOpen ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"}`}
+                style={{ transition: "opacity 0.3s ease-in-out, visibility 0.3s ease-in-out" }}
             >
                 <div className="flex flex-col items-center space-y-4 py-6">
                     <button
