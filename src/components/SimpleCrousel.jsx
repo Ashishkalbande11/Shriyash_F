@@ -26,7 +26,8 @@ const SimpleCarousel = () => {
       {
         breakpoint: 768, // Breakpoint for tablets and below
         settings: {
-          slidesToShow: 1, // Show 1 slide in mobile view
+          slidesToShow: 2,
+          height: "50px" // Show 1 slide in mobile view
         },
       },
     ],
@@ -35,10 +36,10 @@ const SimpleCarousel = () => {
   const slides = [img1, img2, img3, img4, img5, img6, img7];
 
   return (
-    <div className="mt-10 p-4 bg-[#9ed1a6] rounded-lg h-[380px]">
+    <div className="mt-2 p-1 bg-[#9ed1a6] rounded-lg h-[200px] md:h-[380px]">
       <Slider {...settings}>
         {slides.map((src, index) => (
-          <div key={index} className="flex justify-center items-center h-80 bg-[#9ed1a6] pr-2">
+          <div key={index} className="flex justify-center items-center h-40 md:h-80 bg-[#9ed1a6] pr-2">
             <img
               src={src}
               alt={`Slide ${index}`}

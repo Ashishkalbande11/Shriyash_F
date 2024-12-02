@@ -8,41 +8,41 @@ import { useNavigate } from "react-router-dom";
 const Footer = () => {
   const navigate = useNavigate();
   return (
-    <footer className="bg-gray-800 text-white py-8 rounded-lg m-4">
+    <footer className="bg-gray-800 text-white py-8 rounded-lg m-1">
       {/* Footer Container */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Grid Layout */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* About Section */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">About Us</h3>
+            <h3 className="text-lg font-semibold mb-4">हमारे बारे में</h3>
             <p className="text-sm text-gray-400">
-            At Shriyash Hi-Tech Nursary, we are passionate about bringing the beauty of nature to your home. With years of expertise in growing and nurturing premium plant seedlings, we offer a wide variety of plants that are perfect for every space. Whether you're a seasoned gardener or just starting, our high-quality plants, expert advice, and sustainable practices are here to help you grow your green dream. Join us in making the world greener, one plant at a time!
+            श्रीयश हाई-टेक नर्सरी में, हम आपके घर में प्रकृति की खूबसूरती लाने के लिए प्रतिबद्ध हैं। पौधों के प्रीमियम बीजों को उगाने और पोषित करने में हमारे वर्षों के अनुभव के साथ, हम पौधों की एक विस्तृत श्रृंखला प्रदान करते हैं जो हर स्थान के लिए उपयुक्त हैं। चाहे आप एक अनुभवी माली हों या अभी शुरुआत कर रहे हों, हमारे उच्च गुणवत्ता वाले पौधे, विशेषज्ञ सलाह और सतत् अभ्यास आपके हरे सपने को साकार करने में मदद करेंगे। आइए, मिलकर दुनिया को हरियाली से भरें, एक पौधा एक समय में ! 
             </p>
           </div>
 
           {/* Links Section */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+            <h3 className="text-lg font-semibold mb-4">त्वरित लिंक</h3>
             <ul className="space-y-2">
               <li>
                 <button onClick={()=> navigate("/")} className="text-sm text-gray-400 hover:text-white">
-                  Home
+                घर
                 </button>
               </li>
               <li>
                 <button onClick={() => navigate("/about")} className="text-sm text-gray-400 hover:text-white">
-                  About
+                हमारे बारे में
                 </button>
               </li>
               <li>
                 <button onClick={() => navigate("/home")} className="text-sm text-gray-400 hover:text-white">
-                  Services
+                सेवाएँ
                 </button>
               </li>
               <li>
                 <button onClick={()=> navigate("/contact")} className="text-sm text-gray-400 hover:text-white">
-                  Contact
+                संपर्क करें
                 </button>
               </li>
             </ul>
@@ -50,7 +50,7 @@ const Footer = () => {
 
           {/* Social Media Section */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
+            <h3 className="text-lg font-semibold mb-4">हमें फ़ॉलो करें</h3>
             <div className="flex space-x-4">
               <a
                 href="https://www.facebook.com/profile.php?id=61567820752302&mibextid=ZbWKwL"

@@ -14,23 +14,23 @@ const Home = () => {
   return (
       <div className='p-4'>
         <SimpleCarousel/>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-6 w-full bg-[#9ed1a6] mt-5 rounded-lg">
-          <div className="h-[300px] bg-white rounded-lg shadow-lg">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-1 p-1 w-full bg-[#9ed1a6] mt-3 rounded-lg">
+          <div className="h-[200px] md:h-[300px] bg-white rounded-lg shadow-lg">
             <img className="h-full w-full rounded-lg" src={tomato} alt="" srcset="" />
           </div>
-          <div className="h-[300px] bg-white rounded-lg shadow-lg">
+          <div className="h-[200px] md:h-[300px] bg-white rounded-lg shadow-lg">
             <img className="h-full w-full rounded-lg" src={marigold} alt="" srcset="" />
           </div>
-          <div className="h-[300px] bg-white rounded-lg shadow-lg">
+          <div className="h-[200px] md:h-[300px] bg-white rounded-lg shadow-lg">
             <img className="h-full w-full rounded-lg" src={brinjal} alt="" srcset="" />
           </div>
-          <div className="h-[300px] bg-white rounded-lg shadow-lg">
+          <div className="h-[200px] md:h-[300px] bg-white rounded-lg shadow-lg">
             <img className="h-full w-full rounded-lg" src={chilli} alt="" srcset="" />
           </div>
-          <div className="h-[300px] bg-white rounded-lg shadow-lg">
+          <div className="h-[200px] md:h-[300px] bg-white rounded-lg shadow-lg">
             <img className="h-full w-full rounded-lg" src={gobi} alt="" srcset="" />
           </div>
-          <div className="h-[300px] bg-white rounded-lg shadow-lg">
+          <div className="h-[200px] md:h-[300px] bg-white rounded-lg shadow-lg">
             <img className="h-full w-full rounded-lg" src={tarbuj} alt="" srcset="" />
           </div>
         </div>
