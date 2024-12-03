@@ -14,7 +14,7 @@ const Home = () => {
   return (
       <div className='p-1'>
         <SimpleCarousel/>
-        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-1 p-1 w-full bg-[#9ed1a6] mt-3 rounded-lg">
+        <div className="grid grid-cols-2 md:grid-cols-3 m-1 p-2 gap-2 md:m-6 bg-[#9ed1a6] rounded-lg md:p-3">
           <div className="h-[180px] md:h-[300px] bg-white rounded-lg shadow-lg">
             <img className="h-full w-full rounded-lg" src={tomato} alt="" srcset="" />
           </div>

@@ -17,6 +17,34 @@ const Navbar = () => {
                 />
             </div>
 
+            {/* Links for Medium and Larger Screens */}
+            <div className="hidden md:flex space-x-6">
+                <button
+                    onClick={() => navigate("/home")}
+                    className="text-gray-700 hover:text-[#4CAF50] font-semibold"
+                >
+                    Home
+                </button>
+                <button
+                    onClick={() => navigate("/about")}
+                    className="text-gray-700 hover:text-[#4CAF50] font-semibold"
+                >
+                    About
+                </button>
+                <button
+                    onClick={() => navigate("/contact")}
+                    className="text-gray-700 hover:text-[#4CAF50] font-semibold"
+                >
+                    Contact
+                </button>
+                <button
+                    onClick={() => navigate("/shop")}
+                    className="text-gray-700 hover:text-[#4CAF50] font-semibold"
+                >
+                    Shop
+                </button>
+            </div>
+
             {/* Hamburger Menu for Mobile */}
             <button
                 className="text-gray-700 md:hidden flex items-center ml-auto"
@@ -38,7 +66,7 @@ const Navbar = () => {
                 </svg>
             </button>
 
-            {/* Menu Links - Popup Style */}
+            {/* Menu Links - Popup Style for Small Screens */}
             <div
                 className={`md:hidden absolute top-0 right-0 w-full bg-gray-100 shadow-lg transition-all duration-300 ${isMenuOpen ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"}`}
                 style={{ transition: "opacity 0.3s ease-in-out, visibility 0.3s ease-in-out" }}
@@ -55,7 +83,7 @@ const Navbar = () => {
                     </button>
                     <button
                         onClick={() => {
-                            navigate('/about');
+                            navigate("/about");
                             setIsMenuOpen(false); // Close the menu after navigation
                         }}
                         className="text-gray-700 hover:text-[#4CAF50] font-semibold"
@@ -64,7 +92,7 @@ const Navbar = () => {
                     </button>
                     <button
                         onClick={() => {
-                            navigate('/contact');
+                            navigate("/contact");
                             setIsMenuOpen(false); // Close the menu after navigation
                         }}
                         className="text-gray-700 hover:text-[#4CAF50] font-semibold"
@@ -73,7 +101,7 @@ const Navbar = () => {
                     </button>
                     <button
                         onClick={() => {
-                            navigate('/shop');
+                            navigate("/shop");
                             setIsMenuOpen(false); // Close the menu after navigation
                         }}
                         className="text-gray-700 hover:text-[#4CAF50] font-semibold"

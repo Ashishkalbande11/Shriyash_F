@@ -5,7 +5,7 @@ import img7 from "../images/img7.jpg";
 
 const VideoPlayer = () => {
   return (
-    <div className="flex flex-col lg:flex-row mt-7 p-6 bg-[#9ed1a6] rounded-lg shadow-md gap-5">
+    <div className="flex flex-col lg:flex-row mt-7 p-2 bg-[#9ed1a6] rounded-lg shadow-md gap-5 md:m-6">
       {/* Video Section */}
       <div className="video-container flex-[50%] rounded-lg overflow-hidden bg-white h-[600px]">
         <ReactPlayer

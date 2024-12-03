@@ -4,7 +4,7 @@ import review from "../images/review.jpg"
 const About = () => {
   return (
     <>
-    <div className="w-[97%] mx-auto my-12 p-6 bg-white shadow-lg rounded-lg">
+    <div className="w-[97%] mx-auto my-12 p-6 bg-white shadow-lg rounded-lg md:w-[80%]">
       <h2 className="text-3xl font-bold text-green-700 text-center mb-6">
         हमारे बारे में
       </h2>
@@ -25,7 +25,7 @@ const About = () => {
         अनुभव करें।
       </p>
     </div>
-    <div className="w-[97%] mx-auto  bg-white shadow-lg rounded-lg">
+    <div className="w-[97%] mx-auto  bg-white shadow-lg rounded-lg md:w-[80%] md:mb-6">
       <img className="rounded-lg" src={review} alt="" />
     </div>
     </>
